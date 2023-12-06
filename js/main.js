@@ -90,13 +90,13 @@ function nextQuestion(){
     quiz.classList.add("hidden");
 
     if(userScore <= 7 ){
-      resultText.innerHTML = "Ты Отшитый";
+      resultText.innerHTML = "Отшиваем тебя";
     }else if (userScore <= 13){
-      resultText.innerHTML = 'Ты Чушпан!'
+      resultText.innerHTML = 'Ты Чушпан, а не пацан!'
     }else if (userScore <= 18){
-      resultText.innerHTML = 'Ты Скорлупа!!'
+      resultText.innerHTML = 'Эй Скорлупа!!'
     }else{
-      resultText.innerHTML = 'Ты Старшый!!!'
+      resultText.innerHTML = 'Старшый!!!'
     }
     return
   }
