@@ -21,8 +21,9 @@ body {
 .header__title {
   text-align: center;
   padding: 20px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .main {
@@ -87,7 +88,7 @@ body {
   border-radius: 5px;
   padding: 8px 15px;
   min-height: 44px;
-  font-size: 17px;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
