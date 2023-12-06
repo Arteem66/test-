@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Слово пацана</title>
-</head>
-<body>
-  <main class="main" id="main">
-    <div class="container">
-      <div class="main__wrapper">
-        <div class="top"></div>
-        <div class="content"></div>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Слово пацана</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+      <div class="header">
+        <div class="block">
+          <h2 class="quiz__header">Тест на знание сериала "Слово пацана"</h2>
+          <a class="tg__button" href="https://t.me/+jwV3mSvMpDAzODYy">Telegram</a>
+        </div>
       </div>
-    </div>
-  </main>
-</body>
+
+			<main class="main">
+				<!-- Предупреждение -->
+				<div class="warning hidden">
+					В тесте нет вопросов, <br />
+					заполните и возвращайтесь!
+				</div>
+
+				<!-- Тест на skills верстальщика -->
+				<div class="quiz hidden">
+					<div class="quiz__content">
+						<h3 class="quiz__title">
+							<!-- Задаем значение в JavaScript -->
+						</h3>
+						<ul class="quiz__list">
+							<!-- Задаем значение в JavaScript -->
+						</ul>
+					</div>
+					<div class="quiz__footer">
+						<div class="quiz__total">
+							<!-- Задаем значение в JavaScript -->
+						</div>
+						<button class="quiz__next-btn">Следующий</button>
+					</div>
+				</div>
+
+				<!-- Выводим результаты теста -->
+				<div class="result hidden">
+					<div class="result__title">Тест завершён!</div>
+					<div class="result__text">
+						<!-- Задаем значение в JavaScript -->
+					</div>
+					<div class="result__btn">
+						<a class="result__restart" href="/">Начать заново</a>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="./js/questions.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
 </html>
