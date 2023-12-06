@@ -2,7 +2,8 @@
 @import "null.css";
 
 body {
-  background: #d4faff;
+  color: #fff;
+  background: #272727;
 }
 
 .header {
@@ -48,14 +49,14 @@ body {
   max-width: 450px;
   width: 100%;
   border-radius: 10px;
-  background-color: white;
+  background-color: #3a3a3a;
   text-align: center;
 }
 
 .quiz__top {
   padding-top: 20px;
   max-width: 300px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .quiz__top-img {
@@ -81,6 +82,7 @@ body {
 }
 
 .quiz__option {
+  color: #535353;
   background: aliceblue;
   border: 1px solid #84c5fe;
   border-radius: 5px;
@@ -206,7 +208,7 @@ body {
 }
 
 @media screen and (max-width: 370px) {
-  .quiz__top{
+  .quiz__top {
     padding-top: 0;
   }
 }
