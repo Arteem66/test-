@@ -167,10 +167,11 @@ body {
 }
 
 .result__text {
-  margin: 15px 0;
+  margin: 17px 0;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+  line-height: 1.2;
 }
 
 .result__btn {

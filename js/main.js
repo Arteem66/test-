@@ -90,13 +90,15 @@ function nextQuestion(){
     quiz.classList.add("hidden");
 
     if(userScore <= 7 ){
-      resultText.innerHTML = "Отшиваем тебя";
+      resultText.innerHTML = `Отшиваем тебя <br> Правильно ${userScore} из ${questions.length}`
     }else if (userScore <= 13){
-      resultText.innerHTML = 'Ты Чушпан, а не пацан!'
+      resultText.innerHTML =
+				`Ты Чушпан, а не пацан! <br> Правильно ${userScore} из ${questions.length}`
     }else if (userScore <= 18){
-      resultText.innerHTML = 'Эй Скорлупа!!'
+      resultText.innerHTML =
+				`Эй Скорлупа!! <br> Правильно ${userScore} из ${questions.length}`
     }else{
-      resultText.innerHTML = 'Старшый!!!'
+      resultText.innerHTML = `Старшый!!! <br> Правильно ${userScore} из ${questions.length}`
     }
     return
   }
