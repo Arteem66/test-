@@ -82,9 +82,8 @@ body {
 }
 
 .quiz__option {
-  color: #535353;
-  background: aliceblue;
-  border: 1px solid #84c5fe;
+  background: rgb(173, 173, 173);
+  border: 1px solid #666666;
   border-radius: 5px;
   padding: 8px 15px;
   min-height: 44px;
