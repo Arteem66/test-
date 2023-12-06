@@ -24,9 +24,12 @@ btnNext.addEventListener("click", nextQuestion);
 
 
 function showQuestions(index){
+  const imgBox = $(".quiz__top-img");
   const title = $(".quiz__title");
   const list = $(".quiz__list");
   const total = $(".quiz__total")
+
+  imgBox.setAttribute("src", `${img[index]}`)
 
   title.innerHTML = `${questions[index].question}`;
 
@@ -41,6 +44,7 @@ function showQuestions(index){
 
   total.innerHTML = `${index + 1} из ${questions.length}`
 }
+
 
 
 
@@ -84,12 +88,15 @@ function nextQuestion(){
   if ((count + 1) == questions.length && option.classList.contains('disabled')){
     result.classList.remove("hidden");
     quiz.classList.add("hidden");
-    if(userScore <= 2 ){
-      resultText.innerHTML = "Ты Чушпан!";
-    }else if (userScore <= 4){
+
+    if(userScore <= 7 ){
+      resultText.innerHTML = "Ты Отшитый";
+    }else if (userScore <= 13){
+      resultText.innerHTML = 'Ты Чушпан!'
+    }else if (userScore <= 18){
       resultText.innerHTML = 'Ты Скорлупа!!'
     }else{
-      resultText.innerHTML = 'Ты Старший!!!'
+      resultText.innerHTML = 'Ты Старшый!!!'
     }
     return
   }
