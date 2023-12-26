@@ -14,15 +14,15 @@ getRandomNumber()
 function getRandomNumber() {
 	count = Math.floor(Math.random() * questions.length)
 
-	console.log(count)
-	cheackNumber.push(count)
-	
-	for (let i = 0; i < cheackNumber.length; i++) {
-		if (count == cheackNumber[i] && i != cheackNumber.length - 1) {
+	for (let i = 0; i < 2; i++) {
+		if (cheackNumber.includes(count)) {
+			console.log('Число ' + count + ' есть в массиве')
 			count = Math.floor(Math.random() * questions.length)
-			cheackNumber.pop()
+			console.log('Новое число ' + count)
+			i = 0
+		} else {
 			cheackNumber.push(count)
-			i = 0;
+			i = cheackNumber.length
 		}
 	}
 
