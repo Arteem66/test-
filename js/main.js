@@ -96,7 +96,7 @@ function nextQuestion() {
 	const resultText = $('.result__text')
 
 	if (
-		questionNumber + 1 == questions.length &&
+		questionNumber == questions.length &&
 		option.classList.contains('disabled')
 	) {
 		result.classList.remove('hidden')
